@@ -50,8 +50,8 @@ if __name__ == "__main__":
                 mode='a', header=False)
 
     # Upload to s3
-    s3 = boto3.client('s3', aws_access_key_id='AKIAJZ5DER2K4VU65NDA',
-                      aws_secret_access_key='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')
+    s3 = boto3.client('s3', aws_access_key_id='',
+                      aws_secret_access_key='')
     print("S3 upload for weather data")
     try:
         s3.upload_file(r'/Users/sravichandran/Desktop/Sindu/Traffic/Data Scraping /output/weather_data_2015/darksky_2015.csv', 'traffic--data', '2015_Weather_data.csv')
